@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+main{
+    /*Το Βασικό περιεχόμενο */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+footer{
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+/*CSS Για το Navigation Bar*/
+header {
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    background: linear-gradient(90deg, #1a1a1a, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #db1000 50%, transparent 10%);
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+.navbar .active {
+    color: #db1000;
+    background-color: rgba(219, 16, 0, 0.1);
+    border-radius: 10px;
+}
+.navbar a:hover {
+    background-position: 0 0;
+    color: #fff;
+}
+.navbar button {
+    /* Δεν χρειάζεται να φαίνεται σε μεγαλη οθόνη */
+    display: none;
+}
+/*Τέλος του CSS για το Navigation Bar*/
+
+/*Αρχή CSS για κεντρικό Τίτλο κάθε σελίδας*/
+.main-tittle {
+    width: 100%;
+    background: linear-gradient(135deg, #1a1a1a, #db1000);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+.main-tittle h1 {
+    letter-spacing: 2px;
+}
+/*Τέλος του CSS για κεντρικό Τίτλο*/
+
+/* Το container της εικόνας και της λεζάντας */
+figure {
+    display: table; /* Κάνει το figure να έχει το πλάτος της εικόνας */
+    margin: 20px auto; /* Κεντράρει την εικόνα στη σελίδα */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Η ίδια η εικόνα */
+figure img {
+    display: block;
+    max-width: 100%; /* Για να είναι responsive */
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Η λεζάντα με τα δικαιώματα */
+figcaption {
+    caption-side: bottom;
+    padding: 8px 5px;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Στυλ για τα links μέσα στη λεζάντα */
+figcaption a {
+    color: #d35400; /* Ένα "ψημένο" πορτοκαλί που ταιριάζει σε ψητοπωλείο */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+figcaption a:hover {
+    color: #a04000;
+    text-decoration: underline;
+}
+
+/*Αρχή CSS για μικρές οθόνες*/
+@media(max-width: 768px) {
+
+    /*Αρχή CSS για Navigation Bar να είναι Impact */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .navbar a {
+        display: none;
+        width: 100%;
+        padding: 10px;
+    }
+    .navbar a.active {
+        display: block;
+    }
+    .navbar button {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 6px;
+        background: none;
+        border: none;
+        color: #f4f4f4;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 6px;
+    }
+    .navbar.responsive a {
+        /* The "responsive" class will be added via JavaScript when clicked */
+        display: block;
+        border-bottom: 1px solid #444;
+    }
+    /*Τέλος του CSS για το Navigation Bar*/
+
+}
