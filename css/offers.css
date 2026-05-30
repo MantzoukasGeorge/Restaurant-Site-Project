@@ -1,0 +1,43 @@
+/* Στοίχιση κάθε προσφοράς τύπου κάρτας με grid layout*/
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* Σχέδιο τύπου κάρτας για κάθε προσφορά*/
+.offer-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+/* Σήκωμα της εκάστοτε κάρτας στο hover*/
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+/* Χρωματισμός κάθε τύπου προσφοράς και τοποθέτηση επάνω δεξιά */
+.offer-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #db1000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+}
+/* Layout για τις τιμές */
+.offer-price {
+    margin-top: 10px;
+}
+/* Στιλ παλιάς τιμής ως διαγραμμένη */
+.price-old {
+    text-decoration: line-through;
+    color: #aaa;
+}
+/* Στιλ τιμής προσφοράς */
+.price-new {
+    color: #db1000;
+    font-weight: bold;
+    font-size: 1.3rem;
+}

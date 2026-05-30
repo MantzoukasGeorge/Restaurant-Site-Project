@@ -13,16 +13,31 @@ main{
     /*Το Βασικό περιεχόμενο */
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 15px auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
 }
 footer{
     width: 100%;
     background-color: #1a1a1a;
     color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 20px;
     position: relative;
     bottom: 0;
+}
+/* Στυλ για τα links μέσα στη λεζάντα */
+footer a {
+    color: #d35400; /* Ένα "ψημένο" πορτοκαλί που ταιριάζει σε ψητοπωλείο */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #a04000;
+    text-decoration: underline;
 }
 
 /*CSS Για το Navigation Bar*/
@@ -74,49 +89,30 @@ header {
 .main-tittle h1 {
     letter-spacing: 2px;
 }
+.main-tittle p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f4f4f4;
+}
 /*Τέλος του CSS για κεντρικό Τίτλο*/
 
-/* Το container της εικόνας και της λεζάντας */
-figure {
-    display: table; /* Κάνει το figure να έχει το πλάτος της εικόνας */
-    margin: 20px auto; /* Κεντράρει την εικόνα στη σελίδα */
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Αρχή CSS για την εικόνα κάθε σελίδας  
+κλάση για τον κεντράρισμα της εικόνας  */
+.menu-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* διαφοροποίηση της εικόνας */
+img{
+    width: 16rem;
+    height: 17rem;
+    border-radius: 75%;
+    margin: 10px 0;
+    object-fit: cover;
+}
+/*Τέλος του CSS για την εικόνα κάθε σελίδας  */
 
-/* Η ίδια η εικόνα */
-figure img {
-    display: block;
-    max-width: 100%; /* Για να είναι responsive */
-    height: auto;
-    border-radius: 4px;
-}
-
-/* Η λεζάντα με τα δικαιώματα */
-figcaption {
-    caption-side: bottom;
-    padding: 8px 5px;
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.4;
-    text-align: center;
-}
-
-/* Στυλ για τα links μέσα στη λεζάντα */
-figcaption a {
-    color: #d35400; /* Ένα "ψημένο" πορτοκαλί που ταιριάζει σε ψητοπωλείο */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-figcaption a:hover {
-    color: #a04000;
-    text-decoration: underline;
-}
 
 /*Αρχή CSS για μικρές οθόνες*/
 @media(max-width: 768px) {

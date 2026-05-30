@@ -6,6 +6,65 @@
     <title>Αρχική</title>
     <link rel="stylesheet" href="./css/style.css">
 
+    <style>
+        /* Κεντράρισμα της εικόνας στον άξονα x*/
+        img{
+            object-position: 30% 100%;
+        }
+        /* Απόσταση ανάμεσα στις ενότητες της αρχικής */
+        main section {
+            margin-bottom: 25px;
+        }
+        /* Τελευταία ενότητα χωρίς κάτω περιθώριο για ομοιόμορφη στοίχιση */
+        main section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Κοινό στιλ "κάρτας" για κάθε ενότητα (όπως οι offer-card στις Προσφορές) */
+        .welcome-message,
+        .about,
+        .offers,
+        .reviews,
+        .info {
+            background: #f4f4f4;
+            padding: 20px 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Ανύψωση της κάρτας όταν γίνεται hover */
+        .welcome-message:hover,
+        .about:hover,
+        .offers:hover,
+        .reviews:hover,
+        .info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Επικεφαλίδες ενοτήτων με κόκκινη γραμμή αριστερά (όπως στο menu) */
+        main section h2 {
+            border-left: 4px solid #db1000;
+            padding-left: 10px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        /* Παράγραφοι ενοτήτων */
+        main section p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Η ενότητα info έχει πολλά h2/p — μικρό κενό ανάμεσα στις ομάδες */
+        .info h2 {
+            margin-top: 15px;
+        }
+        .info h2:first-child {
+            margin-top: 0;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -23,28 +82,47 @@
     </header>
 
     <section class="main-tittle">
-        <div class="container">
-            <h1>Απίθανες Μπουκιές</h1>
-            <p style="font-size: 1.2rem; margin-top: 10px;">Αυθεντικές γεύσεις που θα σου μείνουν αξέχαστες!</p>
-        </div>
+        <h1>Απίθανες Μπουκιές</h1>
+        <p>Αυθεντικές γεύσεις που θα σου μείνουν αξέχαστες!</p>
     </section>
 
-    <main class="main-content">
-        <figure>
-            <img src="./images/zayed-ahmed-zadu-2EhrT8L_IWo-unsplash.jpg" alt="Περιγραφή εικόνας" style="width:100%;">
-            <figcaption>
-                Φωτογραφία από <a href="https://unsplash.com/@zayed_ahmed_zadu">Zayed Ahmed Zadu</a>
-                μέσω του <a href="https://unsplash.com">Unsplash</a> /
-                Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-            </figcaption>
-        </figure>
+    <main>
+        <div class="menu-image-container">
+            <img src="./images/zayed-ahmed-zadu-2EhrT8L_IWo-unsplash.jpg" alt="Κεντρική απεικόνιση ενός πιάτου του καταστήματος">
+        </div>
+        <section class="welcome-message">
+            <h2>Καλώς ήρθατε στις Απίθανες Μπουκιές!</h2>
+            <p>Εδώ θα βρείτε τα πιο νόστιμα σουβλάκια και γύρους της πόλης, φτιαγμένα με αγάπη και τα καλύτερα υλικά. Ελάτε να απολαύσετε μια μοναδική γαστρονομική εμπειρία που θα σας ταξιδέψει στην καρδιά της Ελλάδας!</p>
+        </section>
+        <section class="about">
+            <h2>Η Ιστορία μας</h2>
+            <p>Οι Απίθανες Μπουκιές ξεκίνησαν ως ένα μικρό κατάστημα στην κεντρική πλατεία της Θεσσαλονίκης, όπου η γεύση και η ποιότητα των πιάτων είναι πρωταρχικός σκοπός μας. Μέχρι σήμερα, έχουμε εξελιχθεί σε ένα από τα πιο δημοφιλή ψητοπωλεία της πόλης, διατηρώντας την αυθεντικότητά μας και τη γεύση που μας εκπροσωπεί.</p>
+        </section>
+        <section class="offers">
+            <h2>Προσφορές</h2>
+            <p>Μην χάσετε τις εβδομαδιαίες προσφορές μας! Κάθε Τρίτη, απολαύστε ένα δωρεάν αναψυκτικό με κάθε παραγγελία σουβλακιού. Επίσης, κάθε Παρασκευή, προσφέρουμε 20% έκπτωση σε όλα τα γύρους μας. Ελάτε να γιορτάσουμε το τέλος της εβδομάδας με νόστιμες προσφορές!</p>
+        </section>
+        <section class="reviews">
+            <h2>Κριτικές</h2>
+            <p>Οι πελάτες μας λένε τα καλύτερα για εμάς! Διαβάστε τις κριτικές τους και δείτε γιατί οι Απίθανες Μπουκιές είναι η πρώτη επιλογή για όσους αγαπούν το καλό φαγητό.</p>
+        </section>
+        <section class="info">
+            <h2>Διεύθυνση Καταστήματος</h2>
+            <p>Αριστοτέλους 20, Θεσσαλονίκη</p>
+            <h2>Σταθερό Τηλέφωνο</h2>
+            <p>+30 2310 123456</p>
+            <h2>Ώρες Λειτουργίας</h2>
+            <p>Καθημερινά: 12:00-00:00</p>
+            <p>Σαββατοκύριακα: 13:00-02:00</p>
+        </section>
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
-            <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
+        <p>Φωτογραφία από <a href="https://unsplash.com/@zayed_ahmed_zadu">Zayed Ahmed Zadu</a>
+            μέσω του <a href="https://unsplash.com">Unsplash</a> /
+            Άδεια: <a href="https://unsplash.com/license">Unsplash</a></p>
+        <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς από τον Γεώργιο Μαντζούκα.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>

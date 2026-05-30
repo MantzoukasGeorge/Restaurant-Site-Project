@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Προσφορές</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/offers.css">
+    <style>
+        /* Κεντράρισμα της εικόνας στον άξονα x */
+        img{
+            object-position: 10% 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,27 +29,55 @@
 </header>
 
 <section class="main-tittle">
-    <div class="container">
-        <h1>Προσφορές</h1>
-    </div>
+    <h1>Προσφορές</h1>
 </section>
 
-<main class="main-content">
-    <figure>
-        <img src="../images/romain-huneau-jxkshdJhWw4-unsplash.jpg" alt="Περιγραφή εικόνας" style="width:100%;">
-        <figcaption>
-            Φωτογραφία από <a href="https://unsplash.com/@victoriakosmo">Romain HUNEAU</a>
-            μέσω του <a href="https://unsplash.com">Unsplash</a> /
-            Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        </figcaption>
-    </figure>
+<main>
+    <div class="menu-image-container">
+        <img src="../images/romain-huneau-jxkshdJhWw4-unsplash.jpg" alt="Εικόνα με φώτα led take away " />
+     </div>
+    <div class="offers-grid">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <span class="offer-badge">POPULAR</span>
+                <h2>Γύρος Χοιρινός σε Πίτα</h2>
+                <p>Ζουμερός χοιρινός γύρος τυλιγμένος σε μαλακή πίτα με φρέσκα υλικά.</p>
+                <div class="offer-price">
+                    <span class="price-old">3.50€</span>
+                    <span class="price-new">2.50€</span>
+                </div>
+            </div>
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <span class="offer-badge">COMBO</span>
+                <h2>2x Χοιρινά Σουβλάκια + Τηγανιτές Πατάτες</h2>
+                <p>Δύο χοιρινά σουβλάκια στη σχάρα σερβιρισμένα με μια μερίδα τραγανές τηγανιτές πατάτες.
+                </p>
+                <div class="offer-price">
+                    
+                    <span class="price-old">5.90€</span>
+                    <span class="price-new">4.90€</span>
+                </div>
+            </div>
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <span class="offer-badge">DAILY DEAL</span>
+                <h2>Burger + Τηγανιτές Πατάτες</h2>
+                <p>Ζουμερό χειροποίητο burger σε ψωμάκι με τυρί, μπέικον & τραγανές τηγανιτές πατάτες.</p>
+                <div class="offer-price">
+                    <span class="price-old">6.50€</span>
+                    <span class="price-new">5.50€</span>
+                </div>
+            </div>
+        </div>
 </main>
 
-<footer id="footer">
-    <div class="container">
-        <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
-        <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς.</p>
-    </div>
+<footer>
+    <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
+        Φωτογραφία από <a href="https://unsplash.com/@victoriakosmo">Romain HUNEAU</a>
+        μέσω του <a href="https://unsplash.com">Unsplash</a> /
+        Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">Unsplash</a>
+    <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς από τον Γεώργιο Μαντζούκα.</p>
 </footer>
 <script src="../js/script.js"></script>
 

@@ -1,0 +1,64 @@
+
+/* sections */
+.menu-section {
+    list-style: none;
+    margin-bottom: 30px;
+}
+/* κεφαλίδες των τμημάτων */
+.menu-section h2, 
+.menu-table-container h2 {
+    border-left: 4px solid #db1000;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* κλάση menu items για στοίχιση τιμής και περιεχομένου */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+/* Ελάχιστη αλλαγή όταν γίνεται hover */
+.menu-item:hover {
+    background: #fafafa;
+}
+/* Χρωματισμός της τιμής */
+.menu-item .right {
+    color: #db1000;
+    font-weight: bold;
+}
+
+/* table */
+.menu-table-container {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Χρωματισμός της κεφαλίδας */
+thead {
+    background: #1a1a1a;
+    color: #fff;
+}
+/* Σχεδιασμός του κάθε κελιού */
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #b9b9b9;  
+    text-align: left;
+}
+/* Κεντράρισμα κάθε στήλης*/
+td{
+    text-align: center;
+}
+/* κλάση για κεντράρισμα των 4 κεφαλίδων του πίνακα */
+.center{
+    text-align: center;
+}
+/* εναλλασσόμενο χρώμα για τις γραμμές του πίνακα */
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}

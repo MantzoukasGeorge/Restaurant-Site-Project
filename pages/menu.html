@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Μενού</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
 </head>
 
@@ -20,31 +21,261 @@
         <a href="../pages/contact.html">Επικοινωνία</a>
         <button onclick="toggleMenu()">&#9776;</button>
     </nav>
+    <style>
+        /* Κεντράρισμα της εικόνας στον άξονα y */
+        img{
+            object-position: 100% 70%;
+        }
+    </style>
 </header>
 
 <section class="main-tittle">
-    <div class="container">
-        <h1>Μενού</h1>
-        <p style="font-size: 1.2rem; margin-top: 10px;">Αυθεντικές γεύσεις που δεν έχεις ξανά δοκιμάσει!</p>
-    </div>
+    <h1>Μενού</h1>
+    <p>Αυθεντικές γεύσεις που δεν έχεις ξανά δοκιμάσει!</p>
 </section>
 
-<main class="main-content">
-    <figure>
-        <img src="../images/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="Περιγραφή εικόνας" style="width:100%;">
-        <figcaption>
-            Φωτογραφία από <a href="https://unsplash.com/@victoriakosmo">Victoria Shes</a>
-            μέσω του <a href="https://unsplash.com">Unsplash</a> /
-            Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        </figcaption>
-    </figure>
+<main>
+    <div class="menu-image-container">
+        <img src="../images/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="Πιατέλα με κρέατα του καταστήματος">
+    </div>
+    <ul class="menu-section">
+            <li>
+                <h2>Ορεκτικά</h2>
+                <ul>
+                    <li class="menu-item">
+                        <span class="left" ><strong>Πατάτες</strong> μερίδα</span>
+                        <span class="right">2.50€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Πατάτες</strong> με τυρί & σως</span>
+                        <span class="right">3.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Τζατζίκι</strong></span>
+                        <span class="right">2.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Τυροσαλάτα</strong></span>
+                        <span class="right">3.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Ουγγάρεζα</strong></span>
+                        <span class="right">3.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Φέτα</strong></span>
+                        <span class="right">3.30€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Φέτα</strong> ψητή</span>
+                        <span class="right">4.30€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Φέτα</strong> δεματάκι</span>
+                        <span class="right">5.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Σαγανάκι</strong></span>
+                        <span class="right">4.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Ρεβυθοκεφτέδες</strong></span>
+                        <span class="right">3.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Κολοκυθοκεφτέδες</strong></span>
+                        <span class="right">3.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Ντοματοκεφτέδες</strong></span>
+                        <span class="right">3.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Πιτάκια</strong> με πέστο</span>
+                        <span class="right">3.80€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Μπουγιουρντί</strong></span>
+                        <span class="right">4.90€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Κριτσίνια</strong> κοτόπουλο</span>
+                        <span class="right">3.90€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Σωσάκι</strong></span>
+                        <span class="right">0.50€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Πίτα</strong></span>
+                        <span class="right">0.50€</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-section">
+            <li>
+                <h2>Σαλάτες</h2>
+                <ul>
+                    <li class="menu-item">
+                        <span class="left" ><strong>Χωριάτικη</strong></span>
+                        <span class="right">5.50€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Αγγουροντομάτα</strong></span>
+                        <span class="right">3.70€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Του Καίσαρα</strong></span>
+                        <span class="right">6.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Γύρο σαλάτα</strong></span>
+                        <span class="right">6.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Σαλάτα της Αγάπης</strong></span>
+                        <span class="right">6.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Σαλάτα του Σεφ</strong></span>
+                        <span class="right">6.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Ντάκος</strong> </span>
+                        <span class="right">6.00€</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="left"><strong>Σαλάτα Σκιάθος</strong></span>
+                        <span class="right">6.00€</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu-table-container">
+            <h2>Της Ώρας</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" >Είδος</th>
+                        <th scope="col" class="center">Τεμάχιο</th>
+                        <th scope="col" class="center">Πίτες</th>
+                        <th scope="col" class="center">Ψωμί</th>
+                        <th scope="col" class="center">Μερίδα</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Γύρος Χοιρινός</th>
+                        <td>-</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+
+
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Γύρος Κοτόπουλο</th>
+                        <td>-</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Σουβλάκι Χοιρινό</th>
+                        <td>1,70</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Σουβλάκι Κοτόπουλο</th>
+                        <td>1,90</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Μπιφτέκι</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Μπιφτέκι(Μπέικον-Τυρί)</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Μπιφτέκι Κοτόπουλο</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Κεμπάπ</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Κοτομπέικον</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Κοτόπουλο Φιλέτο</th>
+                        <td>-</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Πανσέτα</th>
+                        <td>2,00</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Λουκάνικο</th>
+                        <td>1,80</td>
+                        <td>3,00</td>
+                        <td>3,50</td>
+                        <td>7,00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Πατατόπιτα</th>
+                        <td>-</td>
+                        <td>1,70</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >Πατατόψωμο</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2,20</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </main>
 
-<footer id="footer">
-    <div class="container">
-        <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
-        <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς.</p>
-    </div>
+<footer>
+    <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
+    <p>Φωτογραφία από <a href="https://unsplash.com/@victoriakosmo">Victoria Shes</a>
+        μέσω του <a href="https://unsplash.com">Unsplash</a> /
+        Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">Unsplash</a></p>
+    <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς από τον Γεώργιο Μαντζούκα.</p>
 </footer>
 <script src="../js/script.js"></script>
 </body>

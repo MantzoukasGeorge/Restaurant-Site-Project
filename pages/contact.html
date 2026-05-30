@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Επικοινωνία</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
 
 </head>
 
@@ -23,27 +24,36 @@
 </header>
 
 <section class="main-tittle">
-    <div class="container">
-        <h1>Επικοινωνήστε μαζί μας</h1>
-    </div>
+    <h1>Επικοινωνήστε μαζί μας</h1>
 </section>
 
-<main class="main-content">
-    <figure>
-        <img src="../images/raymond-petrik-b-PZxjOoUs8-unsplash.jpg" alt="Περιγραφή εικόνας" style="width:100%;">
-        <figcaption>
-            Φωτογραφία από <a href="https://unsplash.com/@raymondpetrik"><span>Raymond Petrik</span></a>
-            μέσω του <a href="https://unsplash.com">Unsplash</a> /
-            Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        </figcaption>
-    </figure>
+<main>
+    <div class="menu-image-container">
+        <img src="../images/raymond-petrik-b-PZxjOoUs8-unsplash.jpg" alt="Φάκελοι σφραγισμένοι με βουλοκέρι">
+    </div>
+    <form action="mailto:incrediblebites@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Ονοματεπώνυμο</label>
+            <input type="text" id="name" placeholder="π.χ. Γιώργος Μαντζούκας" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="π.χ. name123@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Μήνυμα</label>
+            <textarea id="message" rows="5" required placeholder="Το φαγητό ήταν εξαιρετικό!"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Αποστολή</button>
+    </form>
 </main>
 
-<footer id="footer">
-    <div class="container">
-        <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
-        <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς.</p>
-    </div>
+<footer>
+    <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
+    <p>Φωτογραφία από <a href="https://unsplash.com/@raymondpetrik"><span>Raymond Petrik</span></a>
+        μέσω του <a href="https://unsplash.com">Unsplash</a> /
+        Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">Unsplash</a></p>
+    <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς από τον Γεώργιο Μαντζούκα.</p>
 </footer>
 <script src="../js/script.js"></script>
 

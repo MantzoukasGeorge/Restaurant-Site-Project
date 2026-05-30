@@ -1,0 +1,24 @@
+/* Διαμόρφωση κριτικής */
+.review {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Κεφαλίδα κριτικής */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/* Όνομα πελάτη */
+.customer-name {
+    font-weight: bold;
+}
+/* Χρωματισμός για τα αστεριά κριτικής */
+.review-rating {
+    color: #f5b301;
+}
+/* Αλλαγή στον τρόπο εμφάνισης του κειμένου κριτικής */
+.review-text {
+    font-style: italic;
+}

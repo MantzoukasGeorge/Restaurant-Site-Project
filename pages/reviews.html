@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Κριτικές</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reviews.css" />
+  </head>
 
-</head>
-
-<body>
-
-<header>
-    <nav  class="navbar" id="topNav">
+  <body>
+    <header>
+      <nav class="navbar" id="topNav">
         <a href="../index.html">Αρχική</a>
         <a href="../pages/menu.html">Μενού</a>
         <a href="../pages/about.html">Η Ιστορία μας</a>
@@ -19,34 +18,65 @@
         <a href="../pages/reviews.html" class="active">Κριτικές</a>
         <a href="../pages/contact.html">Επικοινωνία</a>
         <button onclick="toggleMenu()">&#9776;</button>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<section class="main-tittle">
-    <div class="container">
-        <h1>Οι Κριτικές μας</h1>
-    </div>
-</section>
+    <section class="main-tittle">
+      <h1>Οι Κριτικές μας</h1>
+    </section>
 
-<main class="main-content">
-    <figure>
-        <img src="../images/oliver-sjostrom-QXVxgECGUsA-unsplash.jpg" alt="Περιγραφή εικόνας" style="width:100%;">
-        <figcaption>
-            Φωτογραφία από <a href="">Oliver Sjöström</a>
-            μέσω του <a href="https://unsplash.com">Unsplash</a> /
-            Άδεια: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        </figcaption>
-    </figure>
-</main>
+    <main>
+        <div class="menu-image-container">
+            <img src="../images/oliver-sjostrom-QXVxgECGUsA-unsplash.jpg" alt="Εικόνα ενός δαγκωμένου μπέργκερ του καταστήματος" />
+        </div>
+        <div class="review">
+            <div class="review-header">
+            <span class="customer-name">Γιάννης Δ.</span>
+            <span class="review-rating">★★★★★</span>
+            </div>
+            <p class="review-text">
+                "Απλά πεντανόστιμο! Ο γύρος είναι κάτι που πρέπει να δοκιμάσετε. Έχω
+                έρθει αρκετές φορές και ποτέ δεν απογοητεύει. Το προσωπικό είναι
+                επίσης πολύ φιλικό και η εξυπηρέτηση γρήγορη. Το συστήνω
+                ανεπιφύλακτα σε όποιον αναζητά αυθεντικό ελληνικό φαγητό."
+            </p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="customer-name">Μαρία Σ.</span>
+                <span class="review-rating">★★★★☆</span>
+            </div>
+            <p class="review-text">
+                "Εξαιρετικό φαγητό και ζεστή ατμόσφαιρα. Το σουβλάκι ήταν τρυφερό
+                και γευστικό. Το μόνο μου παράπονο είναι ότι η μερίδα θα μπορούσε να
+                είναι λίγο μεγαλύτερη για την τιμή. Γενικά, μια πολύ καλή εμπειρία
+                και θα ξαναέρθω να δοκιμάσω και άλλα από το μενού."
+            </p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="customer-name">Γιώργος Π.</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <p class="review-text">
+                "Αγαπώ αυτό το μέρος! Το φαγητό είναι πάντα φρέσκο και νόστιμο. Το
+                προσωπικό είναι φιλόξενο και σε κάνει να νιώθεις σαν στο σπίτι σου.
+                Είναι το αγαπημένο μου μέρος για ένα γρήγορο και χορταστικό γεύμα.
+                Συνεχίστε την καλή δουλειά!"
+            </p>
+        </div>
+    </main>
 
-<footer id="footer">
-    <div class="container">
-        <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
-        <p style="font-size: 0.8rem; margin-top: 5px;">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς.</p>
-    </div>
-</footer>
-<script src="../js/script.js"></script>
-
-</body>
-
+    <footer>
+      <p>&copy; 2026 Απίθανες Μπουκιές | Project Εργασίας WEB TECHNOLOGIES</p>
+      <p>
+        Φωτογραφία από
+        <a href="https://unsplash.com/@ollivves">Oliver Sjöström</a> μέσω του
+        <a href="https://unsplash.com">Unsplash</a> / Άδεια:
+        <a href="https://unsplash.com/license">Unsplash</a>
+      </p>
+      <p style="font-size: 0.8rem; margin-top: 5px">Σχεδιάστηκε για εκπαιδευτικούς σκοπούς από τον Γεώργιο Μαντζούκα.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

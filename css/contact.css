@@ -1,0 +1,67 @@
+
+/* Σχεδιασμός για την ομάδα φόρμας */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* στιλ για την labels */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* στιλ γαι τα input και textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #fafafa;
+    transition: all 0.25s ease;
+}
+
+/* Χρωματική αλλαγή για τα placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* focus effect για input και textarea */
+.form-group input:focus,
+.form-group textarea:focus {
+    background: #fff;
+    border-color: #db1000;
+    box-shadow: 0 0 0 3px rgba(219,16,0,0.15);
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #db1000, #b80d00);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* Hover για το submit button */
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(219,16,0,0.3);
+}
+
+/* click effect για το submit button */
+.submit-btn:active {
+    transform: scale(0.98);
+}
